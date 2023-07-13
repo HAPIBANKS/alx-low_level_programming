@@ -1,13 +1,2 @@
 #!/bin/bash
-/**
-*Get the C file name from the environment variable
-*CFILE=$1
-
-* Run the preprocessor and save the output to a file
-*gcc -E $CFILE -o c
-*/
-{
-
-	 Print a success message
-	echo "Successfully preprocessed $CFILE"
-}
+gcc $CFILE -o c
