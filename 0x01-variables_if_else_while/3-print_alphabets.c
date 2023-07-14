@@ -7,6 +7,7 @@
 int main(void)
 {
 	char ch = 'a';
+	char upper_ch;
 
 	while (ch <= 'z';)
 	{
