@@ -6,15 +6,14 @@
 */
 int main(void)
 {
-	char ch = '0';
-	char next_ch;
+	int i;
+	int next_i;
 
-	while (ch <= '9')
+	for (i = 0; i <= 9; i++)
 	{
-	putchar(ch);
-	next_ch = ch + 1;
-	putchar(next_ch);
-	ch = next_ch;
+	putchar(i + '0');
+	next_i = i + 1;
+	putchar(next_i + '0');
 	}
 
 	putchar('\n');
