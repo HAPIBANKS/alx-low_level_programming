@@ -6,14 +6,18 @@
 */
 int main(void)
 {
-	int i;
+	char ch = '0';
+	char next_ch;
 
-	for (i = 0; i <= 9; i++)
+	while (ch <= '9')
 	{
-	putchar("%d", i);
+	putchar(ch);
+	next_ch = ch + 1;
+	putchar(next_ch);
+	ch = next_ch;
 	}
 
-	putchar("\n");
+	putchar('\n');
 
 	return (0);
 }
