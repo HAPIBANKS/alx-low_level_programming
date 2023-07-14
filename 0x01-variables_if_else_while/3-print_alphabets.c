@@ -9,7 +9,7 @@ int main(void)
 	char ch = 'a';
 	char upper_ch = 'A';
 
-	while (ch <= 'z';)
+	while (ch <= 'z')
 	{
 	putchar(ch);
 	ch++;
