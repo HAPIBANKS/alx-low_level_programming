@@ -26,7 +26,5 @@ int main(void)
 	ch = next_ch;
 	}
 
-	putchar('\n');
-
 	return (0);
 }
