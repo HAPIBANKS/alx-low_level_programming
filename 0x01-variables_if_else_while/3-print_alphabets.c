@@ -7,7 +7,7 @@
 int main(void)
 {
 	char ch = 'a';
-	char upper_ch;
+	char upper_ch = 'A';
 
 	while (ch <= 'z';)
 	{
@@ -15,7 +15,6 @@ int main(void)
 	ch++;
 	}
 
-	upper_ch = ch - 'a' + 'A';
 	while (upper_ch <= 'Z')
 	{
 	putchar(upper_ch);
