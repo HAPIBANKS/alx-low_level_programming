@@ -7,7 +7,6 @@
 int main(void)
 {
 	int i;
-	int next_i;
 
 	for (i = 0; i <= 9; i++)
 	{
