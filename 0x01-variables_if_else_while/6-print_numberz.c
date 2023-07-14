@@ -13,7 +13,7 @@ int main(void)
 	{
 	putchar(i + '0');
 	next_i = i + 1;
-	putchar(next_i + '0');
+	/*putchar(next_i + '0');*/
 	}
 
 	return (0);
