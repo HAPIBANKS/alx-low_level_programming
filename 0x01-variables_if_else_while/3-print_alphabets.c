@@ -13,12 +13,14 @@ int main(void)
 	putchar(ch);
 	ch++;
 	}
+
 	upper_ch = ch - 'a' + 'A';
 	while (upper_ch <= 'Z')
 	{
 	putchar(upper_ch);
 	upper_ch++;
 	}
+
 	putchar('\n');
 
 	return (0);
