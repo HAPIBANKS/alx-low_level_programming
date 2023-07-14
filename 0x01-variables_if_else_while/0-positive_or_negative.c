@@ -1,10 +1,29 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
-main()
+/**
+ * main - entry position
+ * Return: end of program
+ */
+int main(void)
 {
-	int a = 20;
-	int b = 30;
-	int c;
+	int n;
 
-	c = a + b;
-	printf("Line 1 - Value of c is %d\n", c);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	{
+	if (n > 0)
+	printf("%d is positive\n", n);
+	}
+
+	{
+	else if (n == 0)
+	printf("%d is zero\n", n);
+	}
+
+	{
+	else
+	printf("%d is negative\n", n);
+	}
+	return (0);
 }
