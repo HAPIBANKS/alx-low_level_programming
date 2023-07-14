@@ -11,8 +11,7 @@ int main(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-	next_i = i + 1;
-	putchar(next_i + '0');
+	putchar(i + 48);
 	}
 
 	putchar ('\n');
