@@ -1,13 +1,19 @@
 #include "main.h"
 
 /**
-*_puts - entry pos
+*_puts - entry position
 *@str: return
 */
 void _puts(char *str)
 {
-	while (*str != '\0')
+	int j;
+
+	j = 0;
+
+	while (str[j] != '\0')
 	{
-	str++;
+	_putchar(str[j]);
+	j++;
 	}
+	_putchar('\n');
 }
