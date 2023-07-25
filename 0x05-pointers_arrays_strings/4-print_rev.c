@@ -6,13 +6,16 @@
 *@s: return
 */
 void print_rev(char *s)
+
 {
 	int j;
-	j = _strlen(s) - 1;
 
+	j = _strlen(s) - 1;
 
 	while (s[j] >= 0)
 	{
+	if (j < 0)
+		break;
 	_putchar(s[j]);
 	j--;
 	}
