@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-*_strcat - main
+*_strncat - main
 *@dest: string 1
 *@src: string 2
-@n: number
+*@n: line
 *Return: show result
 */
 char *_strncat(char *dest, char *src, int n)
