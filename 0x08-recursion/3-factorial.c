@@ -3,7 +3,7 @@
 /**
 *factorial - simple multiplication decrementally
 *@n: entry vale
-*Return return the required result
+*Return: return the required result
 */
 int factorial(int n)
 {
@@ -17,7 +17,6 @@ int factorial(int n)
 	}
 	else
 	{
-	return (n * factorial(n - 1));
-	n--;
+	return ('n * factorial(n - 1)');
 	}
 }
