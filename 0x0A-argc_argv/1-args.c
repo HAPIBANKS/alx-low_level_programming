@@ -9,6 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i = argc;
+
 	argc = 1;
 
 	*argv = argv[i];
