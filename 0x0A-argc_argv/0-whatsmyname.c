@@ -1,13 +1,11 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
 *main - argv, argc
 *Return: always 0
-*@argc: number of argument
-*@argv: argument variable
 */
 
-int main(int argc, char argv)
+int main()
 {
 	char *program_name = __FILE__;
 
