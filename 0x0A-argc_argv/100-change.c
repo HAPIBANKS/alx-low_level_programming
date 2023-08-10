@@ -1,38 +1,81 @@
+#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-int change(int cents)
+/**
+ * make_change - finds least number of coins
+ * @n: money amount
+ * Return: number of coins
+ */
+
+int make_change(int n)
 {
-	if (cents < 0)
-	{
-	return (0);
-	}
+	int coins, quarters, dimes, nickels, twocents, pennies;
 
-	int coins[5] = [25, 10, 5, 2, 1];
-	int num_coins = 0;
+	coins = 0;
+	quarters = 0;
+	dimes = 0;
+	nickels = 0;
+	twocents = 0;
+	pennies = 0;
 
-	for (int i = 0; i < 5; i++)
+	while (n > 0)
 	{
-		while (cents >= coins[i])
+		if (n >= 25)
 		{
-		num_coins++;
-		cents -= coins[i];
+			n -= 25;
+			quarters += 1;
+		}
+		else if (n >= 10)
+		{
+			n -= 10;
+			dimes += 1;
+		}
+		else if (n >= 5)
+		{
+			n -= 5;
+			nickels += 1;
+		}
+		else if (n >= 2)
+		{
+			n -= 2;
+			twocents += 1;
+		}
+		else
+		{
+			n -= 1;
+			pennies += 1;
 		}
 	}
+	coins = quarters + dimes + nickels + twocents + pennies;
 
-	return (num_coins);
+	return (coins);
 }
+
+/**
+ * main - prints minimum number of coins to make change
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: (0)
+ */
 
 int main(int argc, char *argv[])
 {
+	int coins;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	int cents = atoi(argv[1]);
-	int num_coins = change(cents);
-	printf("%d\n", num_coins);
-
+	else if (atoi(argv[1]) < 0)
+	{
+		printf("0\n");
+	}
+	else
+	{
+		coins = make_change(atoi(argv[1]));
+		printf("%d\n", coins);
+	}
 	return (0);
 }
