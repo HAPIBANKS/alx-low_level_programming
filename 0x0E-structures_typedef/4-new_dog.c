@@ -39,37 +39,39 @@ char *_strdup(char *str)
 
 /**
  * new_dog - creates a new dog
- * @name: doggo's name
- * @age: doggo's age
- * @owner: doggo's owner
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
  * Return: new_dog (dog_t)
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *doggo;
-	char *doggo_name, *doggo_owner;
+	dog_t *dog;
+	char *dog_name, *dog_owner;
 
-	doggo = malloc(sizeof(dog_t));
-	if (doggo == NULL)
-		return (NULL);
-
-	doggo_name = _strdup(name);
-	if (doggo_name == NULL)
+	dog = malloc(sizeof(dog_t));
+	if (dog == NULL)
 	{
-		free(doggo);
 		return (NULL);
 	}
 
-	doggo_owner = _strdup(owner);
-	if (doggo_owner == NULL)
+	dog_name = _strdup(name);
+	if (dog_name == NULL)
 	{
-		free(doggo_name);
-		free(doggo);
+		free(dog);
 		return (NULL);
 	}
-	doggo->name = doggo_name;
-	doggo->age = age;
-	doggo->owner = doggo_owner;
-	return (doggo);
+
+	dog_owner = _strdup(owner);
+	if (dog_owner == NULL)
+	{
+		free(dog_name);
+		free(dog);
+		return (NULL);
+	}
+	dog->name = dog_name;
+	dog->age = age;
+	dog->owner = dog_owner;
+	return (dog);
 }
