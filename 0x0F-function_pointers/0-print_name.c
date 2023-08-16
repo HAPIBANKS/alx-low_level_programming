@@ -3,9 +3,9 @@
 
 /**
  * print_name - print name
- * @name: string
+ * @name: name of a person
  * @f: function pointer
- * Return: void
+ * Return: nothing
  */
 
 void print_name(char *name, void (*f)(char *))
