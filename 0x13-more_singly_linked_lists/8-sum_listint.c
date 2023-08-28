@@ -1,6 +1,7 @@
 #include "lists.h"
 
-/**sum_listint - sum lists
+/**
+*sum_listint - sum lists
 *@head: head of nodes
 *Return: return int
 */
