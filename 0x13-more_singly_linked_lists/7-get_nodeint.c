@@ -2,7 +2,7 @@
 
 /**
 *get_nodeint_at_index - get nodes index
-*@h: head of nodes
+*@head: head of nodes
 *@index: index of nodes
 *Return: return listint_t
 */
