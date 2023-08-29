@@ -4,7 +4,7 @@
 *add_nodeint_end - add new node to the end of a linked list
 *@head: head of nodes
 *@n: integer value n store in the node
-^Return: return listint
+*Return: return listint
 */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
