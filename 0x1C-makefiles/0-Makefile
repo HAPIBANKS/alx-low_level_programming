@@ -1,0 +1,2 @@
+all: main.c heap.c
+	gcc main.c heap.c -o school
