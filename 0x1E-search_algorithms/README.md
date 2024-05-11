@@ -1,0 +1,1 @@
+Search Algotithm- a search algorithm refers to a method or technique used to locate specific information within a data structure or collection of data. The goal of a search algorithm is to efficiently find the desired item(s) within the given data.
